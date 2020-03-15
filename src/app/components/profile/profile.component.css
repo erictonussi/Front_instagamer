@@ -1,5 +1,9 @@
 .feed-thumbnail { margin-bottom: 30px; overflow: hidden; display:block; float: left; position: relative; }
-.feed-thumbnail-img { width: auto; height:390px; }
+.feed-thumbnail-img {
+  width: 100%;
+  height: 390px;
+  object-fit: cover;
+}
 
 .feed-thumbnail:after { display: block; position: absolute; top:0; left:0; background: #000; z-index: 9}
 

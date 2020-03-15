@@ -81,12 +81,15 @@
       </button>
     </div>
     <!-- Card image  DELETE PHOTO-->
-    <a><i class="fa fa-trash float-left p-1 my-1 mr-3" type="submit"
-        (click)="deletePhoto(photoDetails[0]?.id);getMyProfile();modal.close('Close click')"> Delete Photo</i></a>
-    <!-- Card image  DELETE PHOTO-->
     <div class="modal-body">
+      <!-- Card image  DELETE PHOTO-->
+      <a class="float-left p-1 my-1"
+          (click)="deletePhoto(photoDetails[0]?.id);getMyProfile();modal.close('Close click')">
+        <i class="fa fa-trash"></i> Delete Photo
+      </a>
+
       <div class="view overlay" style="text-align: center;">
-        <img class="card-img-top" style="padding: 10px;" src={{photoDetails[0]?.image_url}} alt="details image">
+        <img class="card-img-top" src={{photoDetails[0]?.image_url}} alt="details image">
         <div class="mask rgba-white-slight">
           <p>{{photoDetails[0]?.text_photo}}</p>
         </div>
